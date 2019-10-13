@@ -368,4 +368,195 @@
             ]
         }
     ]
+][
+    [
+        "car racing begins 2.20 till 7.45",
+        {
+            "heads": [
+                0,
+                0,
+                3,
+                0,
+                5,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "ST_TIME",
+                "EN_ADJ",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "cricket match start 2.45 ends 7.45",
+        {
+            "heads": [
+                0,
+                0,
+                3,
+                0,
+                5,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "ST_TIME",
+                "EN_ADJ",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "puzzle solving contest 10 am to 23.15",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                5,
+                3,
+                5,
+                5
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR",
+                "CON",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "cp solving contest start 11 am end 23.55",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                4,
+                0,
+                4,
+                7,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "ST_ADJ",
+                "ST_TIME",
+                "TIME_ATTR",
+                "EN_ADJ",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "football at 9",
+        {
+            "heads": [
+                0,
+                2,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_TIME"
+            ]
+        }
+    ],
+    [
+        "okimansu show at 11.15 pm",
+        {
+            "heads": [
+                0,
+                0,
+                3,
+                0,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "class 9.15",
+        {
+            "heads": [
+                0,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "ST_TIME"
+            ]
+        }
+    ],
+    [
+        "tv at 9.15 am",
+        {
+            "heads": [
+                0,
+                2,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "coding challenge starts 23.15",
+        {
+            "heads": [
+                0,
+                0,
+                3,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "ST_TIME"
+            ]
+        }
+    ],
+    [
+        "kaggle comp start at 11.40",
+        {
+            "heads": [
+                0,
+                0,
+                4,
+                2,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "-",
+                "ST_TIME"
+            ]
+        }
+    ]
 ]

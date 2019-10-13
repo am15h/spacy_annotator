@@ -119,7 +119,7 @@ def main():
 
         m.mainloop()
 
-    with open('data.json', 'w', encoding='utf-8') as f:
+    with open('data.json', 'a', encoding='utf-8') as f:
         json.dump(TRAIN_DATA, f, ensure_ascii=False, indent=4)
 
 
