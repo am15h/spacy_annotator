@@ -14,6 +14,7 @@ from prettytable import PrettyTable
 
 sentFile = open("sents", "r")
 
+TRAIN_DATA = []
 
 # tkinter MainWindow
 
@@ -24,11 +25,6 @@ def main():
     heads = []
     deps = []
     deps_data = ["-", "ROOT", "ST_TIME", "ST_ADJ", "EN_TIME", "EN_ADJ", "CON", "TIME_ATTR"]
-    btns = []
-    # t = PrettyTable()
-    # for idx, word in enumerate(words):
-    #     t.add_column(str(idx), [word])
-    # print(t)
     insert_index_head = 0
     insert_index_dep = 0
     button_identities = []
@@ -49,7 +45,6 @@ def main():
         if insert_index_head < words.__len__():
             label_text.set(words[insert_index_head])
 
-
     def insert_deps_callback(deps_index):
         nonlocal insert_index_dep
         deps.insert(insert_index_dep, deps_data[deps_index])
@@ -65,6 +60,11 @@ def main():
         if insert_index_dep < words.__len__():
             label_text2.set(words[insert_index_dep])
         print_deps()
+
+    def write_to_list():
+        TRAIN_DATA.append((sent.strip(), {"heads": heads, "deps": deps}))
+        print(TRAIN_DATA)
+
     # tkinter table
     for i in range(2):
         for j in range(words.__len__()):
@@ -74,10 +74,6 @@ def main():
             elif i == 1:
                 b = tk.Label(m, text=words[j], width=10)
                 b.grid(row=i, column=j)
-
-    # for i in range(words.__len__()):
-    #     h = input(str("Head for " + words[i] + "=>"))
-    #     heads.append(h)
 
     # tkinter table of buttons
     for j in range(words.__len__()):
@@ -96,7 +92,6 @@ def main():
 
     undo_button_dep = tk.Button(m, text="undo dep", width=10, command=undo_dep)
     undo_button_dep.grid(row=4, column=int(words.__len__() / 2) + 1)
-
 
     label_text = tk.StringVar()
     label = tk.Label(m, textvariable=label_text, width=10, bg="lightgreen", pady=10)
@@ -126,15 +121,13 @@ def main():
         for j in range(deps.__len__()):
             b = tk.Label(m, text=deps[j], width=10)
             b.grid(row=10, column=j)
-    # t2 = PrettyTable()
-    # for idx, word in enumerate(words):
-    #     t2.add_column(word, [words[int(heads[idx])]])
-    # print(t2)
+
+
+    write_button = tk.Button(m, text="WRITE", command=write_to_list)
+    write_button.grid(row=11, column=0)
+
 
     m.mainloop()
-
-
-
 
 
 if __name__ == '__main__':
