@@ -18,7 +18,6 @@ sentFile = open("sents", "r")
 # tkinter MainWindow
 
 def main():
-
     m = tk.Tk()
     sent = sentFile.readline()
     words = sent.strip().split(' ')
@@ -37,7 +36,16 @@ def main():
         nonlocal insert_index_head
         heads.insert(insert_index_head, head_index)
         insert_index_head += 1
-        labelText.set(words[insert_index_head])
+        if insert_index_head < words.__len__():
+            label_text.set(words[insert_index_head])
+        print_heads()
+
+    def undo():
+        nonlocal insert_index_head
+        insert_index_head -= 1
+        heads.pop(insert_index_head)
+        if insert_index_head < words.__len__():
+            label_text.set(words[insert_index_head])
 
     # tkinter table
     for i in range(2):
@@ -59,17 +67,34 @@ def main():
         button_identities.append(b)
         b.grid(row=5, column=j, pady=10)
 
-    labelText = tk.StringVar()
-    label = tk.Label(m, textvariable=labelText, width=10)
-    label.grid(row=3, column=0)
-    labelText.set(words[insert_index_head])
+    undo_button = tk.Button(m, text="undo", width=10, command=undo)
+    undo_button.grid(row=4, column=int(words.__len__()/2))
 
+    label_text = tk.StringVar()
+    label = tk.Label(m, textvariable=label_text, width=10, bg="lightgreen", pady=10)
+    label.grid(row=3, column=int(words.__len__()/2))
+    label_text.set(words[insert_index_head])
+
+    # tkinter table heads
+    def print_heads():
+        for i in range(2):
+            for j in range(heads.__len__()):
+                if i == 0:
+                    b = tk.Label(m, text=words[j], width=10)
+                    b.grid(row=i + 8, column=j)
+                elif i == 1:
+                    b = tk.Label(m, text=words[heads[j]], width=10)
+                    b.grid(row=i + 8, column=j)
     # t2 = PrettyTable()
     # for idx, word in enumerate(words):
     #     t2.add_column(word, [words[int(heads[idx])]])
     # print(t2)
 
     m.mainloop()
+
+
+
+
 
 if __name__ == '__main__':
     main()
