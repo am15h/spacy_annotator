@@ -1,0 +1,178 @@
+[
+    [
+        "class from 9 am to 5 pm",
+        {
+            "heads": [
+                0,
+                2,
+                4,
+                2,
+                4,
+                4,
+                5
+            ],
+            "deps": [
+                "ROOT",
+                "ST_ADJ",
+                "ST_TIME",
+                "TIME_ATTR",
+                "CON",
+                "EN_TIME",
+                "EN_ADJ"
+            ]
+        }
+    ],
+    [
+        "Workshop starts at 9:00 and ends at 14:00",
+        {
+            "heads": [
+                0,
+                3,
+                1,
+                4,
+                4,
+                7,
+                5,
+                4
+            ],
+            "deps": [
+                "ROOT",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "CON",
+                "EN_ADJ",
+                "-",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "Complete class work 1 to 9",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                4,
+                4,
+                4
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "ST_TIME",
+                "CON",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "concert ends at 21:00",
+        {
+            "heads": [
+                0,
+                3,
+                1,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "EN_ADJ",
+                "-",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "meeting starts at 21:00",
+        {
+            "heads": [
+                0,
+                3,
+                1,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "ST_ADJ",
+                "-",
+                "ST_TIME"
+            ]
+        }
+    ],
+    [
+        "Gym session starts at 9:00 and ends at 14:00",
+        {
+            "heads": [
+                0,
+                0,
+                4,
+                2,
+                5,
+                5,
+                8,
+                6,
+                5
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "CON",
+                "EN_ADJ",
+                "-",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "Physics classroom starts at 9:00 and ends at 14:00",
+        {
+            "heads": [
+                0,
+                0,
+                4,
+                2,
+                5,
+                5,
+                8,
+                6,
+                5
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "CON",
+                "EN_ADJ",
+                "-",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "class from 9 to 5",
+        {
+            "heads": [
+                0,
+                2,
+                3,
+                3,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "ST_ADJ",
+                "ST_TIME",
+                "CON",
+                "EN_TIME"
+            ]
+        }
+    ]
+]
