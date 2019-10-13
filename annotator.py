@@ -29,23 +29,15 @@ def main():
     # for idx, word in enumerate(words):
     #     t.add_column(str(idx), [word])
     # print(t)
-    insertIndexHead = 0
+    insert_index_head = 0
 
     button_identities = []
 
-    def change(n):
-        # function to get the index and the identity (bname)
-        print(n)
-        bname = (button_identities[n])
-        bname.configure(text="clicked")
-
     def insert_callback(head_index):
-        heads.insert(insertIndexHead, head_index)
-        increment_heads_index(insertIndexHead)
-
-    def increment_heads_index(insertIndexHead):
-        insertIndexHead += 1
-        labelText.set(words[insertIndexHead])
+        nonlocal insert_index_head
+        heads.insert(insert_index_head, head_index)
+        insert_index_head += 1
+        labelText.set(words[insert_index_head])
 
     # tkinter table
     for i in range(2):
@@ -63,14 +55,14 @@ def main():
 
     # tkinter table of buttons
     for j in range(words.__len__()):
-        b = tk.Button(m, text=words[j], width=10, command=partial(change, j))
+        b = tk.Button(m, text=words[j], width=10, command=partial(insert_callback, j))
         button_identities.append(b)
         b.grid(row=5, column=j, pady=10)
 
     labelText = tk.StringVar()
     label = tk.Label(m, textvariable=labelText, width=10)
     label.grid(row=3, column=0)
-    labelText.set(words[insertIndexHead])
+    labelText.set(words[insert_index_head])
 
     # t2 = PrettyTable()
     # for idx, word in enumerate(words):
