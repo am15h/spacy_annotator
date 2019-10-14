@@ -558,5 +558,43 @@
                 "ST_TIME"
             ]
         }
+    ],
+    [
+        "thermo class 9 am",
+        {
+            "heads": [
+                0,
+                0,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "footloose contest start at 4 pm",
+        {
+            "heads": [
+                0,
+                0,
+                4,
+                2,
+                0,
+                4
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
     ]
 ]
