@@ -596,5 +596,156 @@
                 "TIME_ATTR"
             ]
         }
+    ],
+    [
+        "organic ends at 4",
+        {
+            "heads": [
+                0,
+                3,
+                1,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "EN_ADJ",
+                "-",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "physics end 4",
+        {
+            "heads": [
+                0,
+                2,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "EN_ADJ",
+                "EN_TIME"
+            ]
+        }
+    ],
+    [
+        "session till 4 pm",
+        {
+            "heads": [
+                0,
+                2,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "EN_ADJ",
+                "EN_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "gym session 8 am",
+        {
+            "heads": [
+                0,
+                0,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "fifa match important 23.40",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                0
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "ST_TIME"
+            ]
+        }
+    ]
+][
+    [
+        "physics class starts at 2 am ends at 5 pm",
+        {
+            "heads": [
+                0,
+                0,
+                4,
+                2,
+                0,
+                4,
+                8,
+                6,
+                0,
+                8
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR",
+                "EN_ADJ",
+                "-",
+                "EN_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "painting starts at 7 pm",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                0,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "ST_ADJ",
+                "-",
+                "ST_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "drawing ends at 1 pm",
+        {
+            "heads": [
+                0,
+                3,
+                1,
+                0,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "EN_ADJ",
+                "-",
+                "EN_TIME",
+                "TIME_ATTR"
+            ]
+        }
     ]
 ]

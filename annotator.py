@@ -12,6 +12,7 @@ from prettytable import PrettyTable
 
 # Open file containing sentences
 
+outputfile = 'datav2.json'
 
 sentFile = open("sents", "r")
 
@@ -27,7 +28,7 @@ def main():
         words = sent.strip().split(' ')
         heads = []
         deps = []
-        deps_data = ["-", "ROOT", "ST_TIME", "ST_ADJ", "EN_TIME", "EN_ADJ", "CON", "TIME_ATTR"]
+        deps_data = ["-", "ROOT", "ST_TIME", "ST_ADJ", "EN_TIME", "EN_ADJ", "CON", "TIME_ATTR", "DUE_ADJ", "DUE_TIME"]
         insert_index_head = 0
         insert_index_dep = 0
         button_identities = []
@@ -119,7 +120,7 @@ def main():
 
         m.mainloop()
 
-    with open('data.json', 'a', encoding='utf-8') as f:
+    with open(outputfile, 'a', encoding='utf-8') as f:
         json.dump(TRAIN_DATA, f, ensure_ascii=False, indent=4)
 
 

@@ -1,0 +1,154 @@
+['physics class starts at 2 am ends at 5 pm', {'heads': [0, 0, 0, 2, 2, 4, 0, 6, 6, 8], 'deps': ['ROOT', '-', 'ST_ADJ', '-', 'ST_TIME', 'TIME_ATTR', 'EN_ADJ', '-', 'EN_TIME', 'TIME_ATTR']}, 'painting starts at 7 pm', {'heads': [0, 0, 1, 1, 3], 'deps': ['ROOT', 'ST_ADJ', '-', 'ST_TIME', 'TIME_ATTR']}, 'drawing ends at 1 pm', {'heads': [0, 0, 1, 1, 3], 'deps': ['ROOT', 'EN_ADJ', '-', 'EN_TIME', 'TIME_ATTR']}, 'class from 9 am to 5 pm', {'heads': [0, 0, 1, 2, 0, 0, 5], 'deps': ['ROOT', 'ST_ADJ', 'ST_TIME', 'TIME_ATTR', 'CON', 'EN_TIME', 'TIME_ATTR']}, 'Workshop starts at 9:00 and ends at 14:00', {'heads': [0, 0, 1, 1, 0, 0, 5, 5], 'deps': ['ROOT', 'ST_ADJ', '-', 'ST_TIME', 'CON', 'EN_ADJ', '-', 'EN_TIME']}, 'Complete class work 1 to 9', {'heads': [0, 0, 1, 0, 0, 4], 'deps': ['ROOT', '-', '-', 'ST_TIME', 'CON', 'EN_TIME']}, 'concert ends at 21:00', {'heads': [0, 0, 1, 1], 'deps': ['ROOT', 'EN_ADJ', '-', 'EN_TIME']}, 'meeting starts at 21:00', {'heads': [0, 0, 1, 1], 'deps': ['ROOT', 'ST_ADJ', '-', 'ST_TIME']}, 'Gym session starts at 9:00 and ends at 14:00', {'heads': [0, 0, 0, 2, 2, 0, 0, 6, 6], 'deps': ['ROOT', '-', 'ST_ADJ', '-', 'ST_TIME', 'CON', 'EN_ADJ', '-', 'EN_TIME']}, 'Physics classroom starts at 9:00 and ends at 14:00', {'heads': [0, 0, 0, 2, 2, 0, 0, 6, 6], 'deps': ['ROOT', '-', 'ST_ADJ', '-', 'ST_TIME', 'CON', 'EN_ADJ', '-', 'EN_TIME']}, 'class from 9 to 5', {'heads': [0, 0, 1, 0, 3], 'deps': ['ROOT', 'ST_ADJ', 'ST_TIME', 'CON', 'EN_TIME']}, 'class 9.15', {'heads': [0, 0], 'deps': ['ROOT', 'ST_TIME']}, 'tv at 9.15 am', {'heads': [0, 0, 0, 2], 'deps': ['ROOT', '-', 'ST_TIME', 'TIME_ATTR']}, 'coding challenge starts 23.15', {'heads': [0, 0, 0, 2], 'deps': ['ROOT', '-', 'ST_ADJ', 'ST_TIME']}, 'kaggle comp start at 11.40', {'heads': [0, 0, 0, 2, 2], 'deps': ['ROOT', '-', 'ST_ADJ', '-', 'ST_TIME']}, 'hacker ctf starts at 2 am ends 2 pm', {'heads': [0, 0, 0, 2, 2, 4, 0, 6, 7], 'deps': ['ROOT', '-', 'ST_ADJ', '-', 'ST_TIME', 'TIME_ATTR', 'EN_ADJ', 'EN_TIME', 'TIME_ATTR']}, 'car racing begins 2.20 till 7.45', {'heads': [0, 0, 0, 2, 0, 4], 'deps': ['ROOT', '-', 'ST_ADJ', 'ST_TIME', 'EN_ADJ', 'EN_TIME']}, 'cricket match start 2.45 ends 7.45', {'heads': [0, 0, 0, 2, 0, 4], 'deps': ['ROOT', '-', 'ST_ADJ', 'ST_TIME', 'EN_ADJ', 'EN_TIME']}][
+    [
+        "dslab due by 2 pm",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                1,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "DUE_ADJ",
+                "-",
+                "DUE_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "data strct asg submit at 7 pm",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                0,
+                3,
+                3,
+                5
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "DUE_ADJ",
+                "-",
+                "DUE_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "classroom work finish by 9 pm",
+        {
+            "heads": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                4
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "DUE_ADJ",
+                "-",
+                "DUE_TIME",
+                "TIME_ATTR"
+            ]
+        }
+    ],
+    [
+        "dslab due 10:00",
+        {
+            "heads": [
+                0,
+                0,
+                1
+            ],
+            "deps": [
+                "ROOT",
+                "DUE_ADJ",
+                "DUE_TIME"
+            ]
+        }
+    ],
+    [
+        "submit spreadsheet by 6",
+        {
+            "heads": [
+                0,
+                0,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "DUE_ADJ",
+                "DUE_TIME"
+            ]
+        }
+    ],
+    [
+        "complete reading slides before 23.10",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                0,
+                3
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "DUE_ADJ",
+                "DUE_TIME"
+            ]
+        }
+    ],
+    [
+        "buy groceries before 10",
+        {
+            "heads": [
+                0,
+                0,
+                0,
+                2
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "DUE_ADJ",
+                "DUE_TIME"
+            ]
+        }
+    ],
+    [
+        "finish watching web series by 22.00",
+        {
+            "heads": [
+                0,
+                0,
+                1,
+                2,
+                0,
+                4
+            ],
+            "deps": [
+                "ROOT",
+                "-",
+                "-",
+                "-",
+                "DUE_ADJ",
+                "DUE_TIME"
+            ]
+        }
+    ]
+]
